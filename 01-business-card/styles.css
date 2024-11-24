@@ -45,6 +45,8 @@ hr {
     width: 130px;
 }
 
+/* CSS for avatar swing animation below */
+
 .avatar {
   transition: all 0.2s ease-in-out;
 }
