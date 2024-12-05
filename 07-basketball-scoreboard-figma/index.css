@@ -1,0 +1,88 @@
+@font-face {
+    font-family: "CursedTimer";
+    src: url("CursedTimerUlil-Aznm.ttf");
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+    margin: 0 auto;
+    width: 500px;
+    padding-top: 68px;
+    background-color: #1B244A;
+    color: #EEEEEE;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+    font-size: 40px;
+    margin: 0;
+    margin-bottom: 21px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.score-number {
+    width: 155px;
+    height: 120px;
+    background-color: #080001;
+    font-size: 90px;
+    font-family: "CursedTimer";
+    color: #F94F6D;
+    margin: 0;
+    padding-top: 16px;
+    border-radius: 5px;
+}
+
+/* Nesting the score inside a <div> to use Flexbox instead: */
+
+/* .score-board {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 155px;
+    height: 120px;
+    background-color: #080001;
+    border-radius: 5px;
+}
+
+.score-number {
+    font-size: 90px;
+    font-family: "CursedTimer";
+    color: #F94F6D;
+    padding-top: 13px;
+} */
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 155px;
+    height: 45px;
+    margin-top: 26px;
+}
+
+.btn {
+    width: 45px;
+    height: 45px;
+    color: #9AABD8;
+    font-family: "CursedTimer";
+    font-size: 18px;
+    border: 2px solid #9AABD8;
+    border-radius: 5px;
+    background: none;
+    padding: 0;
+    padding-top: 4px;
+}

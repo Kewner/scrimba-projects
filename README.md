@@ -1,2 +1,2 @@
 # scrimba-projects
-Projects done through the Scrimba Frontend Developer path
+Projects done through the Scrimba Frontend Developer Path.
