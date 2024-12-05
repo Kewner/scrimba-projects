@@ -1,0 +1,78 @@
+body {
+    margin: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.avatar {
+    width: 150px;
+    border: 1px solid #132a13;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px 0 #132a13;
+}
+
+.card {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background: #31572c;
+    color: #ecf39e;
+    border: 2px solid #90a955;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+p {
+    margin: 10px auto;
+}
+
+.text {
+    text-shadow: 3px 3px 1px #132a13;
+    margin-top: 8px;
+}
+
+hr {
+    margin-top: 20px;
+    border-bottom: 1px solid #ecf39e;
+    border-top: none;
+    box-shadow: 1px 1px 2px 0 #132a13;
+    width: 130px;
+}
+
+/* CSS for avatar swing animation below */
+
+.avatar {
+  transition: all 0.2s ease-in-out;
+}
+  
+.avatar:hover {
+animation: swing 1s ease;
+animation-iteration-count: 1;
+}
+
+@keyframes swing {
+15% {
+    transform: translateX(5px);
+}
+30% {
+    transform: translateX(-5px);
+}
+50% {
+    transform: translateX(3px);
+}
+65% {
+    transform: translateX(-3px);
+}
+80% {
+    transform: translateX(2px);
+}
+100% {
+    transform: translateX(0);
+}
+}
