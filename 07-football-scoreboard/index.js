@@ -38,6 +38,9 @@ function highlightLeader() {
     } else if (scoreGuest > scoreHome) {
         guestTeamTitle.style.border = "6px solid gold";
         homeTeamTitle.style.border = "6px solid transparent";
+    } else {
+        guestTeamTitle.style.border = "6px solid transparent";
+        homeTeamTitle.style.border = "6px solid transparent";
 
     }
 }
