@@ -7,20 +7,22 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
+        <h1>Game Scoreboard</h1>
         <div class="container">
             <div class="team-container">
-                <h2>Home Team</h2>
-                <div class="goals" id="goals-home"></div>
+                <h2 id="home-team-title">Home Team</h2>
+                <div class="goal" id="goal-home"></div>
                 <div class="goal-floor"></div>
                 <button class="goal-btn" onclick="homeGoal()">GOAL!!</button>
             </div>
             <div class="team-container">
-                <h2>Guest Team</h2>
-                <div class="goals" id="goals-guest"></div>
+                <h2 id="guest-team-title">Guest Team</h2>
+                <div class="goal" id="goal-guest"></div>
                 <div class="goal-floor"></div>
                 <button class="goal-btn" onclick="guestGoal()">GOAL!!</button>
             </div>
         </div>
+        <button id="btn-reset" onclick="resetScore()">Reset Score</button>
         <script src="index.js"></script>
     </body>
 </html>
