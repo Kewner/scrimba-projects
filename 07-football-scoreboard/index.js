@@ -41,7 +41,6 @@ function highlightLeader() {
     } else {
         guestTeamTitle.style.border = "6px solid transparent";
         homeTeamTitle.style.border = "6px solid transparent";
-
     }
 }
 
