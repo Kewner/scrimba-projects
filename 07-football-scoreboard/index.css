@@ -34,7 +34,6 @@ h1 {
 h2 {
     font-size: 25px;
     margin: 0;
-    background-color: rgba(240, 248, 255, 60%);
     background-color: rgba(6, 83, 0, 70%);
     color: white;
     padding: 10px 20px;
@@ -69,10 +68,9 @@ h2 {
 }
 
 .goal-floor {
-    width: 310;
+    width: 310px;
     height: 3px;
     background-color: rgb(0, 0, 0, 60%);
-    /* box-shadow: 3px 3px 3px black; */
 }
 
 .goal-btn {
