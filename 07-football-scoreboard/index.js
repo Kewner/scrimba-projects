@@ -1,11 +1,10 @@
-// Add more counters (period, fouls, timer)
-
 let scoreHome = 0;
 let scoreGuest = 0;
 
 let goalsHome = document.getElementById('goal-home');
 let goalsGuest = document.getElementById('goal-guest');
 
+// Increment home team score
 function homeGoal() {
     if (scoreHome === 18) {
         alert("Come on, who scores this many goals!?");
@@ -17,6 +16,7 @@ function homeGoal() {
     highlightLeader();
 }
 
+// Increment guest team score
 function guestGoal() {
     if (scoreGuest === 18) {
         alert("Come on, who scores this many goals!?");
@@ -31,6 +31,7 @@ function guestGoal() {
 let homeTeamTitle = document.getElementById('home-team-title');
 let guestTeamTitle = document.getElementById('guest-team-title');
 
+// Highlight current leading team (home or guest)
 function highlightLeader() {
     if (scoreHome > scoreGuest) {
         homeTeamTitle.style.border = "6px solid gold";
@@ -44,6 +45,7 @@ function highlightLeader() {
     }
 }
 
+// Reset score to 0-0 for new match
 function resetScore() {
     scoreHome = 0;
     scoreGuest = 0;
