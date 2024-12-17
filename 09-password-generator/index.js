@@ -19,9 +19,3 @@ function generatePassword() {
 
     return password;
 }
-
-/*
-Math.random()                                   0 - 0.9999999
-Math.random() * characters.length               0 - 90.9999999
-Math.floor(Math.random() * characters.length)   0 - 90
-*/

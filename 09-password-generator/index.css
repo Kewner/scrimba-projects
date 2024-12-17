@@ -10,12 +10,10 @@ body {
     background-color: #1F2937;
     margin: 64px auto;
     display: flex;
-    /* padding: 115px 52px; */
 }
 
 #ui-container {
     margin: 0 auto;
-    /* width: 446px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
