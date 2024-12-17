@@ -1,6 +1,7 @@
 function getPasswords() {
     let length = Number(document.getElementById("length-input").value);
     if (!validateLengthInput(length)) return;
+    document.getElementById("length-alert").style = "none";
 
     let useNumbers = document.getElementById("toggle-numbers").checked;
     let useSymbols = document.getElementById("toggle-symbols").checked;
@@ -35,7 +36,7 @@ function generatePassword(length, useNumbers, useSymbols) {
 
 function validateLengthInput(length) {
     if (length > 30 || length < 15) {
-        alert("Password length must be between 15 and 30!");
+        document.getElementById("length-alert").style = "color: #dc0707";
         return false;
     }
 

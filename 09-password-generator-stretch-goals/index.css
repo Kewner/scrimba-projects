@@ -2,6 +2,7 @@ body {
     margin: 0;
     background-color: #1C1C1C;
     font-family: "Inter", sans-serif;
+    color: #D5D4D8;
 }
 
 #container {
@@ -36,13 +37,17 @@ h2 {
     font-size: 20px;
     line-height: 28px;
     font-weight: 400;
-    color: #D5D4D8;
     margin-top: 0;
-    margin-bottom: 51px;
+    margin-bottom: 40px;
+}
+
+#length-alert {
+    margin: 0;
+    margin-bottom: 5px;
+    color: #1F2937;
 }
 
 #options-container {
-    color: #D5D4D8;
     display: flex;
     margin-bottom: 30px;
     height: 70px;
@@ -60,6 +65,11 @@ h2 {
 label,
 input {
     display: block;
+}
+
+input {
+    background-color: #1C1C1C;
+    color: white;
 }
 
 #length-input {
