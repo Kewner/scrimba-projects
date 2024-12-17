@@ -5,7 +5,7 @@ let passwordOneEl = document.getElementById("password-one");
 let passwordTwoEl = document.getElementById("password-two");
 
 function getPasswords() {
-    let lengthInput = document.getElementById("length-input").value;
+    let lengthInput = Number(document.getElementById("length-input").value);
 
     if (lengthInput > 30 || lengthInput < 15) {
         alert("Password length must be between 15 and 30!");
