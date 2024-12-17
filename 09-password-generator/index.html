@@ -13,14 +13,16 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <div id ="container">
-            <h1>Generate a <br><span id="h1-green">random password</span></h1>
-            <h2>Never use an insecure password again.</h2>
-            <button id="btn-password">Generate passwords</button>
-            <hr>
-            <div id="passwords">
-                <p id="password-one"></p>
-                <p id="password-two"></p>
+        <div id="container">
+            <div id="ui-container">
+                <h1>Generate a <br><span id="h1-green">random password</span></h1>
+                <h2>Never use an insecure password again.</h2>
+                <button id="btn-password" onclick="getPasswords()">Generate passwords</button>
+                <hr>
+                <div id="password-container">
+                    <p id="password-one"></p>
+                    <p id="password-two"></p>
+                </div>                
             </div>
         </div>
 

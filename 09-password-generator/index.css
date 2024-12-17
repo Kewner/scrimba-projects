@@ -1,6 +1,7 @@
 body {
     margin: 0;
     background-color: #1C1C1C;
+    font-family: "Inter", sans-serif;
 }
 
 #container {
@@ -8,7 +9,16 @@ body {
     height: 550px;
     background-color: #1F2937;
     margin: 64px auto;
+    display: flex;
     /* padding: 115px 52px; */
+}
+
+#ui-container {
+    margin: 0 auto;
+    /* width: 446px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 h1 {
@@ -17,6 +27,7 @@ h1 {
     font-weight: 800;
     font-family: "Karla", sans-serif;
     line-height: 40px;
+    margin: 10px 0;
 }
 
 #h1-green {
@@ -24,38 +35,48 @@ h1 {
 }
 
 h2 {
-    font-family: "Inter", sans-serif;
     font-size: 20px;
+    line-height: 28px;
     font-weight: 400;
     color: #D5D4D8;
+    margin-top: 0;
+    margin-bottom: 51px;
 }
 
 #btn-password {
     color: white;
     font-size: 16px;
-    font-family: "Inter", sans-serif;
     font-weight: 500;
     background-color: #10B981;
     border-radius: 6px;
     border: none;
     width: 191px;
     height: 42px;
+    margin-top: 0;
+    margin-bottom: 35px;
 }
 
 hr {
     border: solid 1px #2F3E53;
     width: 446px;
+    margin-top: 0;
+    margin-bottom: 35px;
 }
 
-#passwords {
+#password-container {
     display: flex;
-    justify-content: space-around
+    justify-content: space-between;
+    margin-top: 0;
 }
 
 #password-one,
 #password-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 211px;
     height: 39px;
+    color: #55F991;
     background-color: #273549;
     border-radius: 6px;
 }
