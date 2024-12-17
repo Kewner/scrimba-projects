@@ -4,13 +4,11 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 let passwordOneEl = document.getElementById("password-one");
 let passwordTwoEl = document.getElementById("password-two");
 
+// let numbersInput = document.getElementById("toggle-numbers").value;
+
 function getPasswords() {
     let lengthInput = Number(document.getElementById("length-input").value);
-
-    if (lengthInput > 30 || lengthInput < 15) {
-        alert("Password length must be between 15 and 30!");
-        return;
-    }
+    if (!validateLengthInput(lengthInput)) return;
 
     passwordOneEl.textContent = generatePassword(lengthInput);
     passwordTwoEl.textContent = generatePassword(lengthInput);
@@ -25,4 +23,13 @@ function generatePassword(length) {
     }
 
     return password;
+}
+
+function validateLengthInput(lengthInput) {
+    if (lengthInput > 30 || lengthInput < 15) {
+        alert("Password length must be between 15 and 30!");
+        return false;
+    }
+
+    return true;
 }

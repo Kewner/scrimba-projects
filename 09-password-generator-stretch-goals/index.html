@@ -17,9 +17,19 @@
             <div id="ui-container">
                 <h1>Generate a <br><span id="h1-green">random password</span></h1>
                 <h2>Never use an insecure password again.</h2>
-                <div id="length-input-container">
-                    <label for="length-input" id="length-input-label">Password length (15-30):</label>
-                    <input type="number" id="length-input" name="length-input" min="15" max="30">
+                <div id="options-container">
+                    <div id="length-input-container">
+                        <label for="length-input">Password length (15-30):</label>
+                        <input type="number" id="length-input" name="length-input" min="15" max="30">
+                    </div>
+                    <div id="toggle-numbers-container">
+                        <label for="toggle-numbers">Use numbers:</label>
+                        <input type="checkbox" id="toggle-numbers" name="toggle-numbers" checked>
+                    </div>
+                    <div id="toggle-symbols-container">
+                        <label for="toggle-symbols">Use symbols</label>
+                        <input type="checkbox" id="toggle-symbols" name="toggle-symbols" checked>
+                    </div>                    
                 </div>
                 <button id="btn-password" onclick="getPasswords()">Generate passwords</button>
                 <hr>

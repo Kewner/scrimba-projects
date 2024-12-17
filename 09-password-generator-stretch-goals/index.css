@@ -41,13 +41,13 @@ h2 {
     margin-bottom: 51px;
 }
 
+#options-container {
+    color: #D5D4D8;
+}
+
 #length-input-container {
     display: flex;
     /* margin-bottom: 15px; */
-}
-
-#length-input-label {
-    color: #D5D4D8;
 }
 
 #length-input {
