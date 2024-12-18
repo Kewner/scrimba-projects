@@ -1,15 +1,15 @@
 const btnPassword = document.getElementById("btn-password");
 
 btnPassword.addEventListener("click", function() {
-    let length = Number(document.getElementById("length-input").value);
+    const length = Number(document.getElementById("length-input").value);
     if (!validateLengthInput(length)) return;
     document.getElementById("length-alert").style = "none";
 
-    let useNumbers = document.getElementById("toggle-numbers").checked;
-    let useSymbols = document.getElementById("toggle-symbols").checked;
+    const useNumbers = document.getElementById("toggle-numbers").checked;
+    const useSymbols = document.getElementById("toggle-symbols").checked;
 
-    let passwordOneEl = document.getElementById("password-one");
-    let passwordTwoEl = document.getElementById("password-two");
+    const passwordOneEl = document.getElementById("password-one");
+    const passwordTwoEl = document.getElementById("password-two");
     passwordOneEl.textContent = generatePassword(length, useNumbers, useSymbols);
     passwordTwoEl.textContent = generatePassword(length, useNumbers, useSymbols);
 });
@@ -29,7 +29,7 @@ function generatePassword(length, useNumbers, useSymbols) {
     let password = '';
 
     for (let i = 0; i < length; i++) {
-        let randomIndex = Math.floor(Math.random() * characters.length);
+        const randomIndex = Math.floor(Math.random() * characters.length);
         password += characters[randomIndex];
     }
 
